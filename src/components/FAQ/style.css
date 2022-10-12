@@ -1,0 +1,17 @@
+.faq {
+  font-weight: 700;
+  padding: 50px 0px;
+}
+.faq h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.faq h2 {
+  font-size: 14px;
+}
+.faq p {
+  font-weight: 700;
+}
+.accordion {
+  border: none;
+}

@@ -1,0 +1,36 @@
+.sewa-mobil {
+  padding: 100px;
+  color: white;
+}
+.sewa-mobil .wrapper {
+  padding: 45px;
+  border-radius: 13px;
+  background-color: #0d28a6;
+  color: #d0d0d0;
+  padding-top: 80px;
+}
+.sewa-mobil .row h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  padding-bottom: 16px;
+}
+.sewa-mobil .row p {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 50px;
+}
+.sewa-mobil .row .btn1 {
+  width: 20%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background-color: #5cb85f;
+}
