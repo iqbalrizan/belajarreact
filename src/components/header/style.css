@@ -1,15 +1,4 @@
-body {
-  width: 100%;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  color: #000000;
-}
-
 .header {
-  /* border: 3px solid red; */
-  /* box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.07);
--webkit-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.07);
--moz-box-shadow: 0px 4px 6px -1px rgba(0,0,0,0.07); */
   padding: 15px;
   position: fixed;
   width: 100%;
@@ -17,46 +6,40 @@ body {
   background: #f1f3ff;
   z-index: 9;
 }
-/* .container { */
-/* border: 3px solid green; */
-/* width: 1370px;
-  margin: auto; */
-/* max-width: 100%; */
-/* display: flex; */
-/* } */
+
 .logo {
   width: 151px;
   display: flex;
   align-items: center;
 }
-.logo h1 {
-  color: blue;
-
-  font-weight: bolder;
-  font-size: 30px;
-}
 .menu {
-  /* border: 3px solid blue; */
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  /* list-style: none; */
 }
 .menu a {
   display: block;
-  /* border: 3px solid gray; */
   margin: 16px;
   text-decoration: none;
   color: #000000;
-  margin-top: -20px;
 }
 .burger-icon {
   display: none;
 }
+
+.top-sidebar {
+  display: none;
+}
+.sidebar {
+  flex: 1;
+}
+.overlay-bg {
+  display: none;
+}
+
 @media (max-width: 991px) {
-  /* .menu {
-    display: none;
-  } */
   .burger-icon {
     flex: 1;
     display: flex;
@@ -66,9 +49,56 @@ body {
   .burger-icon img {
     width: 40px;
   }
-}
-/* @media (max-width: 767px) {
-  /* .menu { 
+  .sidebar {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    width: 180px;
+    top: 0;
+    right: -180px;
+    height: 100vh;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-left: 16px;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .sidebar.menu-active {
+    right: 0;
+    width: 50%;
+  }
+
+  .overlay-bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
     display: block;
-  } */
-/* } */
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  .overlay-bg.menu-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .top-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-sidebar h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu a {
+    margin-left: 0;
+  }
+}

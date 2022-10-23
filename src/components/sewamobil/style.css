@@ -1,36 +1,48 @@
-.sewa-mobil {
-  padding: 100px;
-  color: white;
+.sewamobil {
+  padding-top: 50px;
+  font-weight: 700;
+  color: #ffffff;
 }
-.sewa-mobil .wrapper {
-  padding: 45px;
+
+.wrapper {
+  background: #0d28a6;
   border-radius: 13px;
-  background-color: #0d28a6;
-  color: #d0d0d0;
-  padding-top: 80px;
-}
-.sewa-mobil .row h2 {
+  padding-bottom: 10px;
   text-align: center;
-  font-weight: 700;
+}
+
+.wrapper h1 {
   font-size: 36px;
-  line-height: 150%;
-  padding-bottom: 16px;
+  line-height: 54px;
+
+  padding-top: 60px;
 }
-.sewa-mobil .row p {
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  font-weight: 700;
+
+.wrapper p {
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 50px;
+
+  padding: 16px;
 }
-.sewa-mobil .row .btn1 {
-  width: 20%;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
-  background-color: #5cb85f;
+
+.wrapper a {
+  background: #5cb85f;
+  border-color: #5cb85f;
+  border-radius: 2px;
+
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+@media (max-width: 540px) {
+  .wrapper h1 {
+    line-height: 36px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+  }
+  .wrapper p {
+    margin: 0px 20px;
+  }
 }

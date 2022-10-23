@@ -41,3 +41,21 @@
 .copyright img {
   padding-top: 20px;
 }
+@media (max-width: 991px) {
+  .footer .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer .adress {
+    padding-bottom: 10px;
+  }
+  .footer .list {
+    margin-left: -80px;
+    padding-bottom: 10px;
+  }
+  .footer .connect {
+    margin-left: -30px;
+    padding-bottom: 10px;
+  }
+}

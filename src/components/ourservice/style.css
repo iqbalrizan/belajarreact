@@ -20,7 +20,6 @@
 
 .textservices ul {
   display: flex;
-  align-items: center;
 }
 
 .textservices li {
@@ -28,4 +27,10 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+}
+@media (max-width: 540px) {
+  .ourservices img {
+    max-width: 100% !important;
+    margin: 0px auto;
+  }
 }

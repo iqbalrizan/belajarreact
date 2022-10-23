@@ -1,20 +1,21 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Headers from "./components/header";
-import Main from "./components/main";
-import Ourservices from "./components/ourservice";
-import Whyus from "./components/whyus";
-import Sewamobil from "./components/sewamobil";
-import FAQ from "./components/FAQ";
+import Homepage from "./pages/Homepage";
+import Detail from "./pages/detail";
+import Carimobil from "./pages/Carimobil";
 import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="app">
       <Headers />
-      <Main />
-      <Ourservices />
-      <Whyus />
-      <Sewamobil />
-      <FAQ />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/cari-mobil" element={<Carimobil />} />
+        <Route path="/cari-mobil/:id" element={<Detail />} />
+      </Routes>
 
       <Footer />
     </div>

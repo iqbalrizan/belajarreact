@@ -1,6 +1,7 @@
 .whyus {
   padding-top: 100px;
   font-weight: 700;
+  padding-bottom: 100px;
 }
 .whyus .judul h1 {
   font-size: 24px;
@@ -23,4 +24,12 @@
 .whyus .content h2 {
   font-size: 14px;
   line-height: 20px;
+}
+@media (max-width: 540px) {
+  .whyus .judul h1 {
+    text-align: center;
+  }
+  .whyus .judul h2 {
+    text-align: center;
+  }
 }

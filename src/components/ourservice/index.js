@@ -5,7 +5,7 @@ import imgcheck from "../../assets/images/imgceklis.svg";
 const Ourservices = () => {
   return (
     <div>
-      <section className="ourservices">
+      <section className="ourservices" id="our-services">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12">
