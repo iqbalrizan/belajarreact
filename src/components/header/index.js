@@ -36,13 +36,13 @@ const Headers = () => {
                     <a href="#our-services">Our Services</a>
                   </li>
                   <li>
-                    <a href="#why">Why Us</a>
+                    <a href="#whyus">Why Us</a>
                   </li>
                   <li>
-                    <a href="http://">Testimonial</a>
+                    <a href="#testimonial">Testimonial</a>
                   </li>
                   <li>
-                    <a href="http://">FAQ</a>
+                    <a href="#faq">FAQ</a>
                   </li>
                 </ul>
               </div>

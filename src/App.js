@@ -14,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/cari-mobil" element={<Carimobil />} />
-        <Route path="/cari-mobil/:id" element={<Detail />} />
+        {/* <Route path="/detail-mobil/:id" element={<Detail />} /> */}
+        <Route path="/detail-mobil/:id" element={<Detail />} />
       </Routes>
 
       <Footer />

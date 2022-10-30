@@ -16,7 +16,7 @@ export default function SimpleSlider() {
     centerMode: true,
   };
   return (
-    <div className="testimonial">
+    <div className="testimonial" id="testimonial">
       <div className="judul">
         <h1>TESTIMONIAL</h1>
         <h2>Berbagai review positif dari para pelanggan kami</h2>
